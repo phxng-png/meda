@@ -4,7 +4,13 @@ body {
   padding: 0;
 }
 
-div {
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main > div {
   width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -16,11 +22,8 @@ img {
 }
 
 @media screen and (min-width: 772px) {
-  div {
+  main > div {
     width: 45%;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 2%;
     margin-bottom: 20px;
   }
 
@@ -31,8 +34,7 @@ img {
 }
 
 @media screen and (min-width: 998px) {
-  div {
+  main > div {
     width: 30%;
-    margin-right: 2%;
   }
 }
